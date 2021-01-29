@@ -1,2 +1,2 @@
 #!/bin/bash
-gunicorn --bind 0.0.0.0:8000 djangomis.wsgi
+gunicorn --bind 0.0.0.0:8008 djangomis.wsgi
