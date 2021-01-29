@@ -1,0 +1,9 @@
+{% extends 'generic/base.html' %}
+
+{% block title %}Εργαζόμενος{% endblock title %}
+
+{% block content %}
+<h1>Εργαζόμενος</h1>
+<p>{{ ergazomenos }}</p>
+<a href="{% url 'erg_edit' ergazomenos.pk %}">Επεξεργασία</a>
+{% endblock content %}

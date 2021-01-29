@@ -1,0 +1,894 @@
+[
+    {
+        "model": "mis.apasxolisieidos",
+        "pk": 1,
+        "fields": {
+            "apeid": "Πλήρης",
+            "plires_orario": true,
+            "oles_ergasimes": true
+        }
+    },
+    {
+        "model": "mis.apasxolisieidos",
+        "pk": 2,
+        "fields": {
+            "apeid": "Μερική",
+            "plires_orario": false,
+            "oles_ergasimes": true
+        }
+    },
+    {
+        "model": "mis.apasxolisieidos",
+        "pk": 3,
+        "fields": {
+            "apeid": "Εκ περιτροπής",
+            "plires_orario": true,
+            "oles_ergasimes": false
+        }
+    },
+    {
+        "model": "mis.apasxolisieidos",
+        "pk": 4,
+        "fields": {
+            "apeid": "Μερική και εκ περιτροπής",
+            "plires_orario": false,
+            "oles_ergasimes": false
+        }
+    },
+    {
+        "model": "mis.apasxolisitype",
+        "pk": 1,
+        "fields": {
+            "aptyp": "Αορίστου χρόνου"
+        }
+    },
+    {
+        "model": "mis.apasxolisitype",
+        "pk": 2,
+        "fields": {
+            "aptyp": "Ορισμένου χρόνου"
+        }
+    },
+    {
+        "model": "mis.apasxolisitype",
+        "pk": 3,
+        "fields": {
+            "aptyp": "Έργου"
+        }
+    },
+    {
+        "model": "mis.apddilositype",
+        "pk": 1,
+        "fields": {
+            "apddiltyp": "Κανονική"
+        }
+    },
+    {
+        "model": "mis.apddilositype",
+        "pk": 2,
+        "fields": {
+            "apddiltyp": "Έκτακτη"
+        }
+    },
+    {
+        "model": "mis.apddilositype",
+        "pk": 3,
+        "fields": {
+            "apddiltyp": "Επανυποβολή"
+        }
+    },
+    {
+        "model": "mis.apddilositype",
+        "pk": 4,
+        "fields": {
+            "apddiltyp": "Συμπληρωματική"
+        }
+    },
+    {
+        "model": "mis.apodoxestypeefka",
+        "pk": 1,
+        "fields": {
+            "apodtypeefka": "01",
+            "per": "Τακτικές αποδοχές"
+        }
+    },
+    {
+        "model": "mis.apodoxestypeefka",
+        "pk": 2,
+        "fields": {
+            "apodtypeefka": "02",
+            "per": "Αποδοχές Υπαλλήλων ΝΠΔΔ"
+        }
+    },
+    {
+        "model": "mis.apodoxestypeefka",
+        "pk": 3,
+        "fields": {
+            "apodtypeefka": "03",
+            "per": "Δώρο Χριστουγέννων"
+        }
+    },
+    {
+        "model": "mis.apodoxestypeefka",
+        "pk": 4,
+        "fields": {
+            "apodtypeefka": "04",
+            "per": "Δώρο Πάσχα"
+        }
+    },
+    {
+        "model": "mis.apodoxestypeefka",
+        "pk": 5,
+        "fields": {
+            "apodtypeefka": "05",
+            "per": "Επίδομα Αδείας"
+        }
+    },
+    {
+        "model": "mis.apodoxestypeefka",
+        "pk": 6,
+        "fields": {
+            "apodtypeefka": "06",
+            "per": "Επίδομα Ισολογισμού"
+        }
+    },
+    {
+        "model": "mis.apodoxestypeefka",
+        "pk": 7,
+        "fields": {
+            "apodtypeefka": "07",
+            "per": "Αποδοχές Αδειών Εποχικών Απασχολουμένων"
+        }
+    },
+    {
+        "model": "mis.apodoxestypeefka",
+        "pk": 8,
+        "fields": {
+            "apodtypeefka": "08",
+            "per": "Αποδοχές Ασθενείας"
+        }
+    },
+    {
+        "model": "mis.apodoxestypeefka",
+        "pk": 9,
+        "fields": {
+            "apodtypeefka": "09",
+            "per": "Αναδρομικές Αποδοχές"
+        }
+    },
+    {
+        "model": "mis.apodoxestypeefka",
+        "pk": 10,
+        "fields": {
+            "apodtypeefka": "10",
+            "per": "Bonus"
+        }
+    },
+    {
+        "model": "mis.apodoxestypeefka",
+        "pk": 11,
+        "fields": {
+            "apodtypeefka": "11",
+            "per": "Υπερωρίες"
+        }
+    },
+    {
+        "model": "mis.apodoxestypeefka",
+        "pk": 12,
+        "fields": {
+            "apodtypeefka": "12",
+            "per": "Αμοιβή με το κομμάτι (ΦΑΣΟΝ)"
+        }
+    },
+    {
+        "model": "mis.apodoxestypeefka",
+        "pk": 13,
+        "fields": {
+            "apodtypeefka": "13",
+            "per": "Τεκμαρτές Αποδοχές"
+        }
+    },
+    {
+        "model": "mis.apodoxestypeefka",
+        "pk": 14,
+        "fields": {
+            "apodtypeefka": "14",
+            "per": "Λοιπές Αποδοχές"
+        }
+    },
+    {
+        "model": "mis.apodoxestypeefka",
+        "pk": 18,
+        "fields": {
+            "apodtypeefka": "18",
+            "per": "Αναστολή εργασίας"
+        }
+    },
+    {
+        "model": "mis.apodoxestypeefka",
+        "pk": 19,
+        "fields": {
+            "apodtypeefka": "19",
+            "per": "Δώρο Πάσχα αναστολής"
+        }
+    },
+    {
+        "model": "mis.apoxorisitype",
+        "pk": 1,
+        "fields": {
+            "aptyp": "Οικιοθελής αποχώρηση"
+        }
+    },
+    {
+        "model": "mis.apoxorisitype",
+        "pk": 2,
+        "fields": {
+            "aptyp": "Απόλυση"
+        }
+    },
+    {
+        "model": "mis.apoxorisitype",
+        "pk": 3,
+        "fields": {
+            "aptyp": "Συνταξιοδότηση"
+        }
+    },
+    {
+        "model": "mis.apoxorisitype",
+        "pk": 4,
+        "fields": {
+            "aptyp": "Λήξη σύμβασης ορισμένου χρόνου"
+        }
+    },
+    {
+        "model": "mis.apoxorisitype",
+        "pk": 5,
+        "fields": {
+            "aptyp": "Λήξη σύμβασης έργου"
+        }
+    },
+    {
+        "model": "mis.companytype",
+        "pk": 1,
+        "fields": {
+            "companytype": "Εταιρία",
+            "fmytype": 0
+        }
+    },
+    {
+        "model": "mis.companytype",
+        "pk": 2,
+        "fields": {
+            "companytype": "Φυσικό πρόσωπο",
+            "fmytype": 1
+        }
+    },
+    {
+        "model": "mis.formula",
+        "pk": 1,
+        "fields": {
+            "part": 1,
+            "ergt": 2,
+            "mist": 1,
+            "apodt": 1,
+            "meresefka": true,
+            "argiaefka": false,
+            "evalu": "val * imeromisthio"
+        }
+    },
+    {
+        "model": "mis.formula",
+        "pk": 2,
+        "fields": {
+            "part": 1,
+            "ergt": 2,
+            "mist": 3,
+            "apodt": 4,
+            "meresefka": false,
+            "argiaefka": false,
+            "evalu": "val / Decimal(6.5) * imeromisthio * Decimal(1.04167)"
+        }
+    },
+    {
+        "model": "mis.formula",
+        "pk": 3,
+        "fields": {
+            "part": 8,
+            "ergt": 2,
+            "mist": 1,
+            "apodt": 18,
+            "meresefka": true,
+            "argiaefka": false,
+            "evalu": "val * imeromisthio"
+        }
+    },
+    {
+        "model": "mis.formula",
+        "pk": 4,
+        "fields": {
+            "part": 8,
+            "ergt": 2,
+            "mist": 3,
+            "apodt": 19,
+            "meresefka": false,
+            "argiaefka": false,
+            "evalu": "val / Decimal(6.5) * imeromisthio * Decimal(1.04167)"
+        }
+    },
+    {
+        "model": "mis.formula",
+        "pk": 5,
+        "fields": {
+            "part": 1,
+            "ergt": 2,
+            "mist": 4,
+            "apodt": 5,
+            "meresefka": false,
+            "argiaefka": false,
+            "evalu": "(val / Decimal(12.5) * imeromisthio) if (val /Decimal(12.5) <= 13) else (imeromisthio * Decimal(13))"
+        }
+    },
+    {
+        "model": "mis.formula",
+        "pk": 6,
+        "fields": {
+            "part": 6,
+            "ergt": 2,
+            "mist": 1,
+            "apodt": 1,
+            "meresefka": false,
+            "argiaefka": true,
+            "evalu": "val * imeromisthio * Decimal('0.75')"
+        }
+    },
+    {
+        "model": "mis.formula",
+        "pk": 7,
+        "fields": {
+            "part": 9,
+            "ergt": 2,
+            "mist": 1,
+            "apodt": 8,
+            "meresefka": true,
+            "argiaefka": false,
+            "evalu": "val * imeromisthio / 2"
+        }
+    },
+    {
+        "model": "mis.formula",
+        "pk": 8,
+        "fields": {
+            "part": 9,
+            "ergt": 2,
+            "mist": 3,
+            "apodt": 4,
+            "meresefka": false,
+            "argiaefka": false,
+            "evalu": "val / Decimal('6.5') * imeromisthio"
+        }
+    },
+    {
+        "model": "mis.formula",
+        "pk": 9,
+        "fields": {
+            "part": 5,
+            "ergt": 2,
+            "mist": 1,
+            "apodt": 1,
+            "meresefka": false,
+            "argiaefka": false,
+            "evalu": "val * oromisthio * Decimal('0.25')"
+        }
+    },
+    {
+        "model": "mis.formula",
+        "pk": 10,
+        "fields": {
+            "part": 8,
+            "ergt": 2,
+            "mist": 4,
+            "apodt": 5,
+            "meresefka": false,
+            "argiaefka": false,
+            "evalu": "(val / Decimal(12.5) * imeromisthio) if (val /Decimal(12.5) <= 13) else (imeromisthio * Decimal(13))"
+        }
+    },
+    {
+        "model": "mis.formula",
+        "pk": 11,
+        "fields": {
+            "part": 1,
+            "ergt": 1,
+            "mist": 4,
+            "apodt": 5,
+            "meresefka": false,
+            "argiaefka": false,
+            "evalu": "(val / Decimal(12.5) * imeromisthio) if (val /Decimal(12.5) <= 13) else (misthos / Decimal(2))"
+        }
+    },
+    {
+        "model": "mis.formula",
+        "pk": 12,
+        "fields": {
+            "part": 1,
+            "ergt": 2,
+            "mist": 2,
+            "apodt": 3,
+            "meresefka": false,
+            "argiaefka": false,
+            "evalu": "val / Decimal(8) * imeromisthio * Decimal(1.04167)"
+        }
+    },
+    {
+        "model": "mis.kpk",
+        "pk": 26,
+        "fields": {
+            "kpk": "026",
+            "per": "Π.ΑΣΦ.ΤΑΠΙΤ"
+        }
+    },
+    {
+        "model": "mis.kpk",
+        "pk": 101,
+        "fields": {
+            "kpk": "101",
+            "per": "ΜΙΚΤΑ, ΙΚΑ-ΤΕΑΜ"
+        }
+    },
+    {
+        "model": "mis.kpk",
+        "pk": 105,
+        "fields": {
+            "kpk": "105",
+            "per": "ΒΑΡΕΑ, ΙΚΑ-ΤΕΑΜ"
+        }
+    },
+    {
+        "model": "mis.kpkapo",
+        "pk": 1,
+        "fields": {
+            "kpk": 101,
+            "apo": 200201,
+            "perg": "15.90",
+            "peti": "27.96",
+            "ptot": "43.86"
+        }
+    },
+    {
+        "model": "mis.kpkapo",
+        "pk": 2,
+        "fields": {
+            "kpk": 101,
+            "apo": 200310,
+            "perg": "16.00",
+            "peti": "28.06",
+            "ptot": "44.06"
+        }
+    },
+    {
+        "model": "mis.kpkapo",
+        "pk": 3,
+        "fields": {
+            "kpk": 101,
+            "apo": 201108,
+            "perg": "16.50",
+            "peti": "28.56",
+            "ptot": "45.06"
+        }
+    },
+    {
+        "model": "mis.kpkapo",
+        "pk": 4,
+        "fields": {
+            "kpk": 101,
+            "apo": 201211,
+            "perg": "16.50",
+            "peti": "27.46",
+            "ptot": "43.96"
+        }
+    },
+    {
+        "model": "mis.kpkapo",
+        "pk": 5,
+        "fields": {
+            "kpk": 101,
+            "apo": 201407,
+            "perg": "15.50",
+            "peti": "24.56",
+            "ptot": "40.06"
+        }
+    },
+    {
+        "model": "mis.kpkapo",
+        "pk": 6,
+        "fields": {
+            "kpk": 101,
+            "apo": 201606,
+            "perg": "16.00",
+            "peti": "25.06",
+            "ptot": "41.06"
+        }
+    },
+    {
+        "model": "mis.kpkapo",
+        "pk": 7,
+        "fields": {
+            "kpk": 101,
+            "apo": 201906,
+            "perg": "15.75",
+            "peti": "24.81",
+            "ptot": "40.56"
+        }
+    },
+    {
+        "model": "mis.kpkapo",
+        "pk": 8,
+        "fields": {
+            "kpk": 105,
+            "apo": 200201,
+            "perg": "19.35",
+            "peti": "30.11",
+            "ptot": "49.46"
+        }
+    },
+    {
+        "model": "mis.kpkapo",
+        "pk": 9,
+        "fields": {
+            "kpk": 105,
+            "apo": 200310,
+            "perg": "19.45",
+            "peti": "30.21",
+            "ptot": "49.66"
+        }
+    },
+    {
+        "model": "mis.kpkapo",
+        "pk": 10,
+        "fields": {
+            "kpk": 105,
+            "apo": 201108,
+            "perg": "19.95",
+            "peti": "30.71",
+            "ptot": "50.66"
+        }
+    },
+    {
+        "model": "mis.kpkapo",
+        "pk": 11,
+        "fields": {
+            "kpk": 105,
+            "apo": 201211,
+            "perg": "19.95",
+            "peti": "29.61",
+            "ptot": "49.56"
+        }
+    },
+    {
+        "model": "mis.kpkapo",
+        "pk": 12,
+        "fields": {
+            "kpk": 105,
+            "apo": 201407,
+            "perg": "18.95",
+            "peti": "26.71",
+            "ptot": "45.66"
+        }
+    },
+    {
+        "model": "mis.kpkapo",
+        "pk": 13,
+        "fields": {
+            "kpk": 105,
+            "apo": 201606,
+            "perg": "19.45",
+            "peti": "27.21",
+            "ptot": "46.66"
+        }
+    },
+    {
+        "model": "mis.kpkapo",
+        "pk": 14,
+        "fields": {
+            "kpk": 105,
+            "apo": 201906,
+            "perg": "19.20",
+            "peti": "26.96",
+            "ptot": "46.16"
+        }
+    },
+    {
+        "model": "mis.kpkapo",
+        "pk": 15,
+        "fields": {
+            "kpk": 26,
+            "apo": 201312,
+            "perg": "0.40",
+            "peti": "0.40",
+            "ptot": "0.80"
+        }
+    },
+    {
+        "model": "mis.minas",
+        "pk": 1,
+        "fields": {
+            "code": "01",
+            "minas": "Ιανουάριος"
+        }
+    },
+    {
+        "model": "mis.minas",
+        "pk": 2,
+        "fields": {
+            "code": "02",
+            "minas": "Φεβρουάριος"
+        }
+    },
+    {
+        "model": "mis.minas",
+        "pk": 3,
+        "fields": {
+            "code": "03",
+            "minas": "Μάρτιος"
+        }
+    },
+    {
+        "model": "mis.minas",
+        "pk": 4,
+        "fields": {
+            "code": "04",
+            "minas": "Απρίλιος"
+        }
+    },
+    {
+        "model": "mis.minas",
+        "pk": 5,
+        "fields": {
+            "code": "05",
+            "minas": "Μάϊος"
+        }
+    },
+    {
+        "model": "mis.minas",
+        "pk": 6,
+        "fields": {
+            "code": "06",
+            "minas": "Ιούνιος"
+        }
+    },
+    {
+        "model": "mis.minas",
+        "pk": 7,
+        "fields": {
+            "code": "07",
+            "minas": "Ιούλιος"
+        }
+    },
+    {
+        "model": "mis.minas",
+        "pk": 8,
+        "fields": {
+            "code": "08",
+            "minas": "Αύγουστος"
+        }
+    },
+    {
+        "model": "mis.minas",
+        "pk": 9,
+        "fields": {
+            "code": "09",
+            "minas": "Σεπτέμβριος"
+        }
+    },
+    {
+        "model": "mis.minas",
+        "pk": 10,
+        "fields": {
+            "code": "10",
+            "minas": "Οκτώβριος"
+        }
+    },
+    {
+        "model": "mis.minas",
+        "pk": 11,
+        "fields": {
+            "code": "11",
+            "minas": "Νοέμβριος"
+        }
+    },
+    {
+        "model": "mis.minas",
+        "pk": 12,
+        "fields": {
+            "code": "12",
+            "minas": "Δεκέμβριος"
+        }
+    },
+    {
+        "model": "mis.misthodosiatype",
+        "pk": 1,
+        "fields": {
+            "mistype": "Τακτικές αποδοχές",
+            "barytis": "14.0"
+        }
+    },
+    {
+        "model": "mis.misthodosiatype",
+        "pk": 2,
+        "fields": {
+            "mistype": "Δώρο Χριστουγέννων",
+            "barytis": "14.0"
+        }
+    },
+    {
+        "model": "mis.misthodosiatype",
+        "pk": 3,
+        "fields": {
+            "mistype": "Δώρο Πάσχα",
+            "barytis": "28.0"
+        }
+    },
+    {
+        "model": "mis.misthodosiatype",
+        "pk": 4,
+        "fields": {
+            "mistype": "Επίδομα αδείας",
+            "barytis": "28.0"
+        }
+    },
+    {
+        "model": "mis.misthodosiatype",
+        "pk": 5,
+        "fields": {
+            "mistype": "Επίδομα Ισολογισμού",
+            "barytis": "15.0"
+        }
+    },
+    {
+        "model": "mis.oikkattype",
+        "pk": 1,
+        "fields": {
+            "oik": "Άγαμος"
+        }
+    },
+    {
+        "model": "mis.oikkattype",
+        "pk": 2,
+        "fields": {
+            "oik": "Έγγαμος"
+        }
+    },
+    {
+        "model": "mis.parousiatype",
+        "pk": 1,
+        "fields": {
+            "parousiatype": "Μέρες εργασίας (01)"
+        }
+    },
+    {
+        "model": "mis.parousiatype",
+        "pk": 2,
+        "fields": {
+            "parousiatype": "Ώρες εργασίας (ωρομίσθιοι) (01)"
+        }
+    },
+    {
+        "model": "mis.parousiatype",
+        "pk": 3,
+        "fields": {
+            "parousiatype": "Μέρες κανονικής άδειας (01)"
+        }
+    },
+    {
+        "model": "mis.parousiatype",
+        "pk": 4,
+        "fields": {
+            "parousiatype": "Μέρες λοιπών αδειών με αποδοχές (01)"
+        }
+    },
+    {
+        "model": "mis.parousiatype",
+        "pk": 5,
+        "fields": {
+            "parousiatype": "Ώρες νυχτερινές (για προασύξηση) (01)"
+        }
+    },
+    {
+        "model": "mis.parousiatype",
+        "pk": 6,
+        "fields": {
+            "parousiatype": "Μέρες Κυριακών/Αργιών (01)"
+        }
+    },
+    {
+        "model": "mis.parousiatype",
+        "pk": 7,
+        "fields": {
+            "parousiatype": "Ώρες Κυριακών/Αργιών (01)"
+        }
+    },
+    {
+        "model": "mis.parousiatype",
+        "pk": 8,
+        "fields": {
+            "parousiatype": "Μέρες αναστολής εργασίας (18)"
+        }
+    },
+    {
+        "model": "mis.parousiatype",
+        "pk": 9,
+        "fields": {
+            "parousiatype": "Μέρες ασθένειας έως 3 (08)"
+        }
+    },
+    {
+        "model": "mis.parousiatype",
+        "pk": 10,
+        "fields": {
+            "parousiatype": "Μέρες ασθένειας πάνω από 3 (08)"
+        }
+    },
+    {
+        "model": "mis.parousiatype",
+        "pk": 11,
+        "fields": {
+            "parousiatype": "Μέρες ασθένειας χωρίς αποδοχές (08)"
+        }
+    },
+    {
+        "model": "mis.parousiatype",
+        "pk": 12,
+        "fields": {
+            "parousiatype": "Μέρες λοχείας (08)"
+        }
+    },
+    {
+        "model": "mis.taftotitatype",
+        "pk": 1,
+        "fields": {
+            "tat": "ΔΕΛΤΙΟ ΑΣΤΥΝΟΜΙΚΗΣ ΤΑΥΤΟΤΗΤΑΣ"
+        }
+    },
+    {
+        "model": "mis.taftotitatype",
+        "pk": 2,
+        "fields": {
+            "tat": "ΔΙΑΒΑΤΗΡΙΟ"
+        }
+    },
+    {
+        "model": "mis.taftotitatype",
+        "pk": 3,
+        "fields": {
+            "tat": "ΔΕΛΤΙΟ ΔΙΑΜΟΝΗΣ"
+        }
+    },
+    {
+        "model": "mis.xora",
+        "pk": 1,
+        "fields": {
+            "xora": "ΕΛΛΑΔΑ"
+        }
+    },
+    {
+        "model": "mis.xora",
+        "pk": 2,
+        "fields": {
+            "xora": "ΑΛΒΑΝΙΑ"
+        }
+    },
+    {
+        "model": "mis.xora",
+        "pk": 3,
+        "fields": {
+            "xora": "ΠΑΚΙΣΤΑΝ"
+        }
+    },
+    {
+        "model": "mis.xora",
+        "pk": 4,
+        "fields": {
+            "xora": "ΜΠΑΓΚΛΑΝΤΕΣ"
+        }
+    }
+]

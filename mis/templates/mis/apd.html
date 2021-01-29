@@ -1,0 +1,12 @@
+{% extends 'generic/base.html' %}
+
+{% block title %}ΑΠΔ{% endblock title %}
+
+{% block content %}
+<h1>Δημιουργία αρχείου ΑΠΔ</h1>
+<ul>
+  {% for apd in apd_list %}
+  <li><a href="{% url 'apd2zip' apd.id %}">{{ apd }}</a></li>
+  {% endfor %}
+</ul>
+{% endblock content %}

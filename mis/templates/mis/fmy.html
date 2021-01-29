@@ -1,0 +1,17 @@
+{% extends 'generic/base.html' %}
+
+{% block title %}ΦΜΥ{% endblock title %}
+
+{% block content %}
+<h1>Δημιουργία αρχείου Φόρου Μισθωτών Υπηρεσιών</h1>
+<ul>
+  {% for fmy in fmy_list %}
+  <li><a href="{% url 'fmy2zip' fmy.id %}">{{ fmy }}</a></li>
+  {% endfor %}
+</ul>
+{% if messages %}
+{% for message in messages %}
+<div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}" role="alert">{{ message }}</div>
+{% endfor %}
+{% endif %}
+{% endblock content %}

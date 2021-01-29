@@ -1,0 +1,6 @@
+autopep8
+pylint
+rope
+pytest
+pydotplus
+

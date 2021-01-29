@@ -1,0 +1,14 @@
+{% extends 'generic/base.html' %}
+
+{% block title %}Εργαζόμενοι{% endblock title %}
+
+{% block content %}
+<h1>Λίστα εργαζομένων</h1>
+<ul>
+  {% for erg in ergazomenoi_list %}
+  <li><a href="{% url 'erg_detail' erg.id %}">{{ erg.erglist }}</a></li>
+
+  {% endfor %}
+</ul>
+<a href="{% url 'erg_new' %}">Νέος Εργαζόμενος</a>
+{% endblock content %}

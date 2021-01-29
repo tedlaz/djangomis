@@ -1,0 +1,6 @@
+django
+django-crispy-forms
+django-extensions
+graphene_django
+fpdf2
+gunicorn

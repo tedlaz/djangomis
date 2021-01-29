@@ -1,0 +1,12 @@
+{% extends 'generic/base.html' %}
+
+{% block title %}Μισθοδοσίες{% endblock title %}
+
+{% block content %}
+<h1>Μισθοδοσίες</h1>
+<ul>
+  {% for mis in misthodosies_list %}
+  <li><a href="{% url 'mis_detail' mis.id %}">{{ mis }}</a></li>
+  {% endfor %}
+</ul>
+{% endblock content %}

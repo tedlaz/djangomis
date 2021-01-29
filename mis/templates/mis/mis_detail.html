@@ -1,0 +1,61 @@
+{% extends 'generic/base.html' %}
+
+{% block title %}Μισθοδοσία{% endblock title %}
+
+{% block content %}
+<h2 align="center">ΜΙΣΘΟΔΟΤΙΚΗ ΚΑΤΑΣΤΑΣΗ</h2>
+<h6 align="center">{{ misthodosia }}</h6>
+<table cellspacing="0">
+  <tbody>
+    {% with result=misthodosia.calc_misthodosia_foroi %}
+    <tr>
+      {% with tit=result.0 %}
+      <th rowspan=2>{{ tit.onomatep }}</th>
+      <th rowspan=2>{{ tit.eid }}</th>
+      <th rowspan=2>{{ tit.imeromisthio }}</th>
+      <th rowspan=2>{{ tit.meres }}</th>
+      <th rowspan=2>{{ tit.apodoxes }}</th>
+      <th colspan=3>ΚΡΑΤΗΣΕΙΣ ΕΦΚΑ</th>
+      <th colspan=2>ΦΟΡΟΙ</th>
+      <th rowspan=2>{{ tit.pliroteo }}</th>
+    </tr>
+    <tr>
+      <th>{{ tit.kr_enos }}</th>
+      <th>{{ tit.kr_etis }}</th>
+      <th>{{ tit.kr_total }}</th>
+      <th>{{ tit.foros }}</th>
+      <th>{{ tit.eea }}</th>
+
+      {% endwith %}
+    </tr>
+
+    {% for erg in result.1 %}
+    <tr>
+      <td align="left">{{ erg.onomatep }}</td>
+      <td align="left">{{ erg.eid }}</td>
+      <td align="right">{{ erg.imeromisthio }}</td>
+      <td align="right">{{ erg.meres }}</td>
+      <td align="right">{{ erg.apodoxes }}</td>
+      <td align="right">{{ erg.kr_enos }}</td>
+      <td align="right">{{ erg.kr_etis }}</td>
+      <td align="right">{{ erg.kr_total }}</td>
+      <td align="right">{{ erg.foros }}</td>
+      <td align="right">{{ erg.eea }}</td>
+      <td align="right">{{ erg.pliroteo }}</td>
+    </tr>
+    {% endfor %}
+
+    <tr>
+      <td colspan=3 align="center"><b>ΣΥΝΟΛΑ</b></td>
+      {% for val in result.2.values %}
+      <td align="right"><b>{{ val }}</b></td>
+      {% endfor %}
+    </tr>
+    {% endwith %}
+  </tbody>
+</table>
+<div class="noprint">
+  <a href="">Αναλυτική Εκτύπωση</a> | <a href="">Συγκεντρωτική Εκτύπωση</a> | <a href="">Αποδείξεις εργαζομένων</a>
+</div>
+<footer>ΑΚΤΗ ΦΑΡΑΓΓΑ ΠΑΡΟΥ ΕΠΕ,  ΑΦΜ:999249820</footer>
+{% endblock content %}
