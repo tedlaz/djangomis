@@ -1,6 +1,6 @@
 from decimal import Decimal
 from django.db import models
-from django.db.models import Sum
+from django.db.models import Sum, Max
 from django.core.exceptions import ObjectDoesNotExist, ValidationError
 from django.core.validators import MinValueValidator, MaxValueValidator, int_list_validator
 from django.urls import reverse
@@ -189,6 +189,12 @@ class Kpk(models.Model):
                     period_max = kpk_period.apo
                     kpk_max = kpk_period
         return kpk_max
+
+    def kpk_per_test(self, period):
+        try:
+            return self.kpkapo_set.get(apo=self.kpkapo_set.filter(apo__lte=period).aggregate(Max('apo'))['apo__max'])
+        except Exception:
+            return None
 
     def __str__(self):
         return f'{self.kpk} {self.per}'
@@ -542,6 +548,14 @@ class Proslipsi(models.Model):
     is_active.boolean = True
 
     @property
+    def is_activen(self):
+        try:
+            self.apoxorisi.apoxorisidate
+            return False
+        except ObjectDoesNotExist:
+            return True
+
+    @property
     def period_proslipsis(self):
         yyyy, mm, _ = self.proslipsidate.isoformat().split('-')
         return int(f'{yyyy}{mm}')
@@ -667,7 +681,10 @@ class ParousiaDetails(models.Model):
     parousia = models.ForeignKey(
         Parousia, verbose_name='Περίοδος', on_delete=models.PROTECT)
     pro = models.ForeignKey(
-        Proslipsi, verbose_name='Εργαζόμενος', on_delete=models.PROTECT)
+        Proslipsi,
+        verbose_name='Εργαζόμενος',
+        on_delete=models.PROTECT,
+    )
     ptyp = models.ForeignKey(
         ParousiaType, verbose_name='Τύπος παρουσίας', on_delete=models.PROTECT)
     value = models.IntegerField('Ποσότητα', default=0)
