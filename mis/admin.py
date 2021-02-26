@@ -31,7 +31,7 @@ class ApodoxesTypeEfkaAdmin(admin.ModelAdmin):
     list_display = ['apodtypeefka', 'per', 'plirotees']
 
 
-# admin.site.register(mdl.ApodoxesTypeEfka, ApodoxesTypeEfkaAdmin)
+admin.site.register(mdl.ApodoxesTypeEfka, ApodoxesTypeEfkaAdmin)
 
 
 class apoxorisiAdmin(admin.ModelAdmin):
