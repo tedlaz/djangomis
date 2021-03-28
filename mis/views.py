@@ -87,8 +87,10 @@ def fmy2zip(request, fmy_id):
         messages.warning(
             request, f'Δεν υπάρχει ΦΜΥ για την περίοδο: {fmy_period} (Μήπως λόγω κορωνοιού ?)')
         return redirect('/fmy/')
-    response = HttpResponse(mfi.getvalue(), content_type='application/zip')
+    response = HttpResponse(
+        mfi.getvalue(), content_type='application/zip')
     response['Content-Disposition'] = f'attachment; filename={fname}'
+    messages.info(request, f'Το αρχείο {fname} αποθηκεύτηκε ...')
     return response
 
 

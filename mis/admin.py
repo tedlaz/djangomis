@@ -157,7 +157,7 @@ class MishodosiaAdmin(admin.ModelAdmin):
 
 
 admin.site.register(mdl.Misthodosia, MishodosiaAdmin)
-# admin.site.register(mdl.MisthodosiaType)
+admin.site.register(mdl.MisthodosiaType)
 
 # admin.site.register(mdl.OikKatType)
 

@@ -579,8 +579,8 @@ class Proslipsi(models.Model):
     class Meta:
         ordering = ['-proslipsidate', 'erg']
         unique_together = ('proslipsidate', 'erg')
-        verbose_name = 'ΠΡΟΣΛΗΨΗ'
-        verbose_name_plural = 'ΠΡΟΣΛΗΨΕΙΣ'
+        verbose_name = 'ΕΡΓΑΖΟΜΕΝΟΣ ΠΡΟΣΛΗΨΗ'
+        verbose_name_plural = 'ΕΡΓΑΖΟΜΕΝΟΙ ΠΡΟΣΛΗΨΕΙΣ'
 
     def __str__(self):
         return f'{self.erg} {self.proslipsidate}'
@@ -631,8 +631,8 @@ class Apoxorisi(models.Model):
 
     class Meta:
         ordering = ['-apoxorisidate', 'proslipsi']
-        verbose_name = 'ΠΡΟΣΛΗΨΗ-ΑΠΟΧΩΡΗΣΗ'
-        verbose_name_plural = 'ΠΡΟΣΛΗΨΕΙΣ-ΑΠΟΧΩΡΗΣΕΙΣ'
+        verbose_name = 'ΕΡΓΑΖΟΜΕΝΟΣ-ΠΡΟΣΛΗΨΗ-ΑΠΟΧΩΡΗΣΗ'
+        verbose_name_plural = 'ΕΡΓΑΖΟΜΕΝΟΙ-ΠΡΟΣΛΗΨΕΙΣ-ΑΠΟΧΩΡΗΣΕΙΣ'
 
     def __str__(self):
         return f'{self.apoxorisidate} {self.proslipsi.erg} (πρόσληψη: {self.proslipsi.proslipsidate})'
@@ -1150,7 +1150,7 @@ class Apd(models.Model):
         print(f'File {filename} created !!!')
 
     def apd2stream(self):
-        from io import StringIO
+        # from io import StringIO
         txt_data = self.apd2text()
         if txt_data is None:
             return None, None
@@ -1223,7 +1223,16 @@ class Fmy(models.Model):
             for lin in mis:
                 afm = lin['pro'].erg.afm
                 fin[afm] = fin.get(
-                    afm, {'pro': lin['pro'], 'apo': 0, 'kra': 0, 'kath': 0, 'foros': 0, 'eea': 0})
+                    afm,
+                    {
+                        'pro': lin['pro'],
+                        'apo': 0,
+                        'kra': 0,
+                        'kath': 0,
+                        'foros': 0,
+                        'eea': 0
+                    }
+                )
                 # epo = lin['pro'].erg.epo
                 # ono = lin['pro'].erg.ono
                 # pat = lin['pro'].erg.pat
@@ -1311,7 +1320,7 @@ class Fmy(models.Model):
     #     print(f'file {filename} created !!!')
 
     def fmy2stream(self):
-        from io import StringIO
+        # from io import StringIO
         txt_data = self.fmy2text()
         if txt_data is None:
             return None, None

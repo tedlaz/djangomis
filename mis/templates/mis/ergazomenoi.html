@@ -1,14 +1,27 @@
-{% extends 'generic/base.html' %}
-
-{% block title %}Εργαζόμενοι{% endblock title %}
-
-{% block content %}
+{% extends 'generic/base.html' %} {% block title %}Εργαζόμενοι{% endblock title %} {% block content %}
 <h1>Λίστα εργαζομένων</h1>
-<ul>
+<table>
+  <tr>
+    <th>id</th>
+    <th>Επώνυμο</th>
+    <th>Όνομα</th>
+    <th>ΑΜΚΑ</th>
+    <th>ΑΦΜ</th>
+    <th>ΑΜΑ</th>
+    <th>Ημ.Γενν.</th>
+  </tr>
   {% for erg in ergazomenoi_list %}
-  <li><a href="{% url 'erg_detail' erg.id %}">{{ erg.erglist }}</a></li>
-
+  <tr>
+    <td><a href="{% url 'erg_detail' erg.id %}">{{ erg.id }}</a></td>
+    <td>{{ erg.epo }}</td>
+    <td>{{ erg.ono }}</td>
+    <td>{{ erg.amka }}</td>
+    <td>{{ erg.afm }}</td>
+    <td>{{ erg.ama }}</td>
+    <td>{{ erg.gen }}</td>
+  </tr>
   {% endfor %}
-</ul>
+</table>
+
 <a href="{% url 'erg_new' %}">Νέος Εργαζόμενος</a>
 {% endblock content %}
