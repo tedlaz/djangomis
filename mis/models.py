@@ -280,7 +280,7 @@ class Xora(models.Model):
     xora = models.CharField('Χώρα', max_length=80, unique=True)
 
     class Meta:
-        ordering = ['id']
+        ordering = ['xora']
         verbose_name = 'ΧΩΡΑ'
         verbose_name_plural = 'ΧΩΡΕΣ'
 
@@ -741,7 +741,7 @@ class MisthodosiaType(models.Model):
 
 
 class Misthodosia(models.Model):
-    etos = models.IntegerField('Έτος', default=2020)
+    etos = models.IntegerField('Έτος', default=2021)
     mistype = models.ForeignKey(
         MisthodosiaType,
         verbose_name='Τύπος μισθοδοσίας',
@@ -1004,7 +1004,7 @@ class Formula(models.Model):
 
 
 class Apd(models.Model):
-    etos = models.IntegerField('Έτος', default=2020)
+    etos = models.IntegerField('Έτος', default=2021)
     minas = models.ForeignKey(
         Minas, verbose_name='Περίοδος', on_delete=models.PROTECT)
     apdtype = models.ForeignKey(
@@ -1185,7 +1185,7 @@ class ApdDetails(models.Model):
 
 
 class Fmy(models.Model):
-    etos = models.IntegerField('Έτος', default=2020)
+    etos = models.IntegerField('Έτος', default=2021)
     minas = models.ForeignKey(
         Minas, verbose_name='Περίοδος', on_delete=models.PROTECT)
     cdate = models.DateField('Ημερομηνία έκδοσης')
