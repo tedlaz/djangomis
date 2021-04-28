@@ -180,7 +180,7 @@ admin.site.register(mdl.Parousia, ParousiaAdmin)
 
 class ParousiaDetailsAdmin(admin.ModelAdmin):
     list_display = ['parousia', 'pro', 'ptyp', 'value']
-    list_filter = ['parousia__minas', 'parousia__etos', 'pro', 'ptyp']
+    list_filter = ['parousia__minas', 'parousia__etos', 'pro__erg', 'ptyp']
     # inlines = [parousiaadmindetails(202002)]
 
 
