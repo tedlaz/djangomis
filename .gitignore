@@ -129,3 +129,5 @@ dmypy.json
 .pyre/
 *.7z
 mis.sql3
+.vscode/
+
