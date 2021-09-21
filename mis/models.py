@@ -32,12 +32,12 @@ class ApdDilosiType(models.Model):
         verbose_name_plural = "ΑΠΔ ΤΥΠΟΙ ΔΗΛΩΣΗΣ"
 
     def code(self):
-        return f"{self.id:02d}"
+        return f"{self.pk:02d}"
 
     code.short_description = "Κωδικός τύπου δήλωσης ΑΠΔ"
 
     def __str__(self):
-        return f"{self.id:02d}-{self.apddiltyp}"
+        return f"{self.pk:02d}-{self.apddiltyp}"
 
 
 class ApasxolisiEidos(models.Model):
