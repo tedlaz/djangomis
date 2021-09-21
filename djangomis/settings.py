@@ -82,10 +82,12 @@ WSGI_APPLICATION = "djangomis.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+DBPATH = os.path.join(BASE_DIR, 'dbfiles')
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": os.path.join(BASE_DIR, "mis.sql3"),
+        "NAME": os.path.join(DBPATH, "mis.sql3"),
     }
 }
 
